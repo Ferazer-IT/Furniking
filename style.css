@@ -172,6 +172,7 @@ body {
 
 
 .collections__main {
+    display: flex;
     margin-left: 90px;
     background: rgba(247, 248, 250, 1);
     width: 260px;
@@ -197,3 +198,148 @@ body {
 }
 
 
+.collections__shop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(rgba(241, 250, 255, 0.88), rgba(241, 250, 255, 1));
+    margin: 10px 0 0 10px;
+    padding: 40px 40px 40px 40px;
+    border-radius: 1px;
+}
+
+
+.collections__secondary {
+    margin-left: 30px;
+}
+
+
+.first__image img {
+    width: 90px;
+}
+
+
+.third__image img {
+    margin-left: 25px;
+}
+
+
+.second__image img {
+    margin-left: 3px;
+}
+
+
+.second__image, .first__image, .third__image {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.second__image, .first__image {
+    margin-bottom: 30px;
+}
+
+
+.cost {
+    color: rgba(122, 199, 81, 1);
+    font-size: 14px;
+    text-align: center;
+    font-family: "GothamPro Medium";
+}
+
+
+.image__description {
+    color: rgba(85, 85, 85, 1);
+    font-size: 10px;
+    font-family: "GothamPro Medium";
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.collections__shop--info {
+    margin-right: 40px;
+}
+
+
+.collections__shop--first {
+    color: rgba(122, 199, 81, 1);
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+
+.collections__shop--second {
+    color: #000;
+    font-size: 40px;
+    font-family: "GothamPro Bold";
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+
+.furniture__image {
+    margin-left: 120px;
+}
+
+
+.collections__shop--third {
+    color: rgba(81, 81, 81, 0.71);
+    font-size: 27px;
+    margin-top: 30px;
+}
+
+
+.collections__shop--button {
+    background: rgba(122, 199, 81, 1);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "GothamPro Medium";
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+.collections__shop--button:hover {
+    background: rgb(92, 150, 61);
+}
+
+/*Information*/
+.information {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.information__about {
+    display: flex;
+    align-items: center;
+    margin-left: 105px;
+}
+
+
+.information__about:first-child {
+    margin-left: 90px;
+}
+
+
+.information__title {
+    margin-left: 15px;
+    font-size: 20px;
+    color: rgba(85, 85, 85, 1);
+    font-family: "GothamPro Medium";
+}
+
+
+.information__subtitle {
+    color: rgba(85, 85, 85, 1);
+    font-family: "GothamPro Medium";
+    font-size: 14px;
+    margin-left: 15px;
+}
