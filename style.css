@@ -343,3 +343,191 @@ body {
     font-size: 14px;
     margin-left: 15px;
 }
+
+/*Profitable*/
+.profitable {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+
+.profitable__first div, .profitable__second div {
+    position: relative;
+}
+
+
+.profitable__first--primary, .profitable__second--primary {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+    color: #000;
+    font-size: 22px;
+    font-family: "GothamPro Medium";
+}
+
+
+.profitable__first--secondary, .profitable__second--secondary {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    z-index: 1;
+    color: rgba(122, 199, 81, 1);
+    font-size: 18px;
+    font-family: "GothamPro Medium";
+}
+
+
+.profitable__first--third, .profitable__second--third {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    z-index: 1;
+    color: rgba(117, 117, 117, 1);
+    font-size: 16px;
+}
+
+
+.profitable__first--third:hover {
+    color: rgb(78, 78, 78);
+    cursor: pointer;
+}
+
+
+.profitable__second div {
+    display: block;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+
+
+.profitable__second section div {
+    margin-top: 0;
+}
+
+/*Trending*/
+
+.trending__items--info {
+    position: relative;
+    width: 270px;
+    height: 288px;
+}
+
+
+.new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 183, 241, 1);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 0px 0px 5px 0px;
+    font-size: 12px;
+    font-family: "GothamPro Medium";
+}
+
+
+.items__name {
+    font-size: 14px;
+    color: rgba(117, 117, 117, 0.71);
+    font-family: "GothamPro Medium";
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.items__descrip {
+    font-size: 20px;
+    color: rgba(85, 85, 85, 1);
+    font-family: "GothamPro Medium";
+}
+
+
+.items__cost {
+    display: inline-block;
+    color: rgba(122, 199, 81, 1);
+    font-size: 18px;
+    font-family: "GothamPro Medium";
+    margin-top: 5px;
+}
+
+
+.items__del--cost {
+    display: inline-block;
+    color: rgba(204, 204, 204, 1);
+    font-size: 18px;
+    font-family: "GothamPro Medium";
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+
+.items__icons i {
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    color: rgba(117, 117, 117, 1);
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.items__icons i:hover {
+    background: #111111;
+    color: #fff;
+}
+
+
+
+.fa-heart {
+    position: absolute;
+    top: 20%;
+    left: 270px;
+}
+
+.fa-shopping-bag {
+    position: absolute;
+    top: 40%;
+    left: 270px;
+}
+
+.fa-sync {
+    position: absolute;
+    top: 60%;
+    left: 270px;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 80%;
+    left: 270px;
+}
+
+
+.trending__items--info:hover .items__icons i {
+    visibility: visible;
+    opacity: 1;
+    animation: move 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes move {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-40px);
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-40px);
+    }
+}
