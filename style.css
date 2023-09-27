@@ -5,7 +5,6 @@
     box-sizing: border-box;
     border: none;
     list-style: none;
-    text-decoration: none;
 }
 
 
@@ -21,8 +20,8 @@
 }
 
 a {
-    color: #252525e0;
     font-family: "GothamPro Bold";
+    text-decoration: none;
 }
 
 body {
@@ -142,6 +141,11 @@ body {
 
 .collections__nav ul li {
     margin-left: 70px;
+}
+
+
+.collections__nav ul li a {
+    color: #252525e0;
 }
 
 
@@ -408,6 +412,52 @@ body {
 }
 
 /*Trending*/
+#trending {
+    margin-top: 60px;
+}
+
+#trending h1 {
+    text-align: center;
+    color: rgba(85, 85, 85, 1);
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+
+.trending__sections ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.trending__sections ul li {
+    margin-left: 40px;
+    font-family: "GothamPro Medium";
+    color: rgba(194, 194, 194, 1);
+    font-size: 24px;
+}
+
+
+.trending__sections ul li:hover {
+    color: rgb(175, 250, 134);
+    cursor: pointer;
+}
+
+
+.trending__sections ul li:first-child {
+    margin-left: 0;
+    color: rgba(122, 199, 81, 1);
+}
+
+
+.trending__items {
+    margin-top: 50px;
+    padding: 0px 100px;
+}
+
 
 .trending__items--info {
     position: relative;
@@ -484,12 +534,12 @@ body {
 }
 
 
-
 .fa-heart {
     position: absolute;
     top: 20%;
     left: 270px;
 }
+
 
 .fa-shopping-bag {
     position: absolute;
@@ -497,11 +547,13 @@ body {
     left: 270px;
 }
 
+
 .fa-sync {
     position: absolute;
     top: 60%;
     left: 270px;
 }
+
 
 .fa-eye {
     position: absolute;
