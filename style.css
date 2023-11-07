@@ -454,6 +454,8 @@ body {
 
 
 .trending__items {
+    display: flex;
+    align-items: center;
     margin-top: 50px;
     padding: 0px 100px;
 }
@@ -461,16 +463,18 @@ body {
 
 .trending__items--info {
     position: relative;
-    width: 270px;
-    height: 288px;
+    margin-left: 20px;
+}
+
+.trending__items:first-child {
+    margin-left: 0;
 }
 
 
-.new {
+.new, .sale {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 183, 241, 1);
     color: #fff;
     padding: 5px 10px;
     border-radius: 0px 0px 5px 0px;
@@ -478,6 +482,14 @@ body {
     font-family: "GothamPro Medium";
 }
 
+
+.new {
+    background: rgba(0, 183, 241, 1);
+}
+
+.sale {
+    background: rgba(122, 199, 81, 1);
+}
 
 .items__name {
     font-size: 14px;
@@ -496,7 +508,6 @@ body {
 
 
 .items__cost {
-    display: inline-block;
     color: rgba(122, 199, 81, 1);
     font-size: 18px;
     font-family: "GothamPro Medium";
@@ -505,7 +516,6 @@ body {
 
 
 .items__del--cost {
-    display: inline-block;
     color: rgba(204, 204, 204, 1);
     font-size: 18px;
     font-family: "GothamPro Medium";
@@ -536,28 +546,28 @@ body {
 
 .fa-heart {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 270px;
 }
 
 
 .fa-shopping-bag {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 270px;
 }
 
 
 .fa-sync {
     position: absolute;
-    top: 60%;
+    top: 45%;
     left: 270px;
 }
 
 
 .fa-eye {
     position: absolute;
-    top: 80%;
+    top: 60%;
     left: 270px;
 }
 
@@ -570,16 +580,193 @@ body {
 }
 
 
+.special-text {
+    color: rgba(85, 85, 85, 1);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 120px;
+    font-family: "GothamPro Medium";
+}
+
+
+.special-offer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.special-offer__about {
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+
+.sells {
+    position: absolute;
+    top: 0;
+    left: 486.2px;
+    color: #fff;
+    font-size: 16px;
+    font-family: "GothamPro Medium";
+    background: rgba(0, 183, 241, 1);
+    border-radius: 0px 0px 0px 5px;
+    padding: 3px 10px;
+}
+
+
+.special-offer__about {
+    position: relative;
+}
+
+.special-offer__info h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(85, 85, 85, 1);
+    font-size: 26px;
+    font-family: "GothamPro Medium";
+    padding: 30px 20px;
+}
+
+
+.special-offer__info p {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    width: 250px;
+    font-family: "GothamPro Medium";
+    font-size: 16px;
+    color: rgba(117, 117, 117, 1);
+}
+
+
+.special-offer__info span {
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    color: rgba(122, 199, 81, 1);
+    font-size: 26px;
+    font-family: "GothamPro Medium";
+}
+
+
+.special-offer__info del {
+    position: absolute;
+    top: 2px;
+    left: 70px;
+    color: rgba(204, 204, 204, 1);
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+
+.special-offer__info button {
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    background: rgba(122, 199, 81, 1);
+    border-radius: 2px;
+    padding: 8px 16px;
+    color: #fff;
+    font-family: "GothamPro Medium";
+    font-size: 18px;
+}
+
+/*Products*/
+#products {
+    margin-top: 80px;
+    
+}
+
+
+#products h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "GothamPro Medium";
+    font-size: 36px;
+    color: rgba(85, 85, 85, 1);
+    margin-bottom: 20px;
+}
+
+
+.products__primary {
+    color: rgba(122, 199, 81, 1);
+    font-size: 24px;
+    font-family: "GothamPro Medium";
+    margin-left: 300px;
+    transition: .5s;
+}
+
+
+.products__secondary {
+    color: rgba(194, 194, 194, 1);
+    font-size: 22px;
+    font-family: "GothamPro Medium";
+    margin-left: 50px;
+    transition: .5s;
+}
+
+
+.products__primary:hover {
+    cursor: pointer;
+}
+
+
+.products__secondary:hover {
+    cursor: pointer;
+    color: rgb(174, 255, 131);
+}
+
+
+.product {
+    margin-top: 60px;
+}
+
+
+.product__info {
+    margin-left: 70px;
+}
+
+
+.product__info--type {
+    color: rgba(117, 117, 117, 0.71);
+    font-size: 12px;
+    font-family: "GothamPro Medium";
+}
+
+
+.product__info--name {
+    color: #000;
+    font-family: "GothamPro Medium";
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+.product__info span {
+    color: rgba(122, 199, 81, 1);
+    font-size: 18px;
+}
+
+
+.product__info del {
+    color: rgba(204, 204, 204, 1);
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+
 @keyframes move {
     0% {
         opacity: 0;
     }
     50% {
-        transform: translateX(-40px);
+        transform: translateX(-44px);
         opacity: .5;
     }
     100% {
         opacity: 1;
-        transform: translateX(-40px);
+        transform: translateX(-44px);
     }
 }
