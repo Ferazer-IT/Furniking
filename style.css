@@ -15,6 +15,11 @@ body {
 }
 
 
+button {
+    cursor: pointer;
+}
+
+
 .start {
     display: flex;
     flex-direction: row;
@@ -705,12 +710,41 @@ body {
 
 
 .product {
+    display: flex;
+    flex-direction: row;
     margin-top: 60px;
 }
 
 
 .product__info {
-    margin-left: 70px;
+    position: relative;
+    margin-left: 55px;
+}
+
+
+.product__info--sale, .product__info--precent, .product__info--new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: GothamProM;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 0px 0px 5px 0px;
+}
+
+
+.product__info--sale {
+    background: rgba(122, 199, 81, 1);
+}
+
+
+.product__info--new {
+    background: rgba(0, 183, 241, 1);
+}
+
+
+.product__info--precent {
+    background: rgba(255, 104, 104, 1);
 }
 
 
@@ -733,6 +767,7 @@ body {
 .product__info span {
     color: rgba(122, 199, 81, 1);
     font-size: 18px;
+    font-family: GothamProM;
 }
 
 
@@ -740,6 +775,69 @@ body {
     color: rgba(204, 204, 204, 1);
     font-size: 16px;
     margin-left: 5px;
+}
+
+
+.product__info:hover .items__icons i {
+    visibility: visible;
+    opacity: 1;
+    animation: move 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.items__icons i:hover {
+    background: rgba(122, 199, 81, 1);
+    color: #fff;
+}
+
+
+.product__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.product__buttons p {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #000;
+    font-family: GothamProM;
+    font-size: 16px;
+}
+
+
+.product__buttons input {
+    border: 1px solid rgb(217, 217, 217);
+    background: rgba(248, 250, 251, 1);
+    max-width: 40px;
+    min-height: 25px;
+    margin-left: 5px;
+    margin-right: -15px;
+    margin-top: 30px;
+    padding: 0px 0px 0px 15px;
+}
+
+
+.product__button {
+    background: rgba(122, 199, 81, 1);
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 52.5%;
+    margin-top: 35px;
+}
+
+
+.product__button2, .product__button3 {
+    background: rgba(122, 199, 81, 1);
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+    font-family: GothamProM;
 }
 
 
