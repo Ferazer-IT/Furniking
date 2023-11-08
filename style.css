@@ -1,15 +1,3 @@
-@font-face {
-    font-family: "GothamPro Bold";
-    src: url(./fonts/GothamProNarrow-Bold.ttf);
-}
-
-
-@font-face {
-    font-family: "GothamPro Medium";
-    src: url(./fonts/GothamPro-Medium.ttf);
-}
-
-
 * {
     margin: 0;
     padding: 0;
