@@ -498,12 +498,12 @@
             </section>
             <section>
                 <div class="product__buttons">
-                    <button class="product__button">Nest page &RightArrow;</button>
+                    <button id="productButton" class="product__button">Next page &RightArrow;</button>
                     <p>Page</p>
-                    <input type="text" placeholder="1">
+                    <span id="input__number">1</span>
                     <p>of 100</p>
-                    <button class="product__button2"><</button>
-                    <button class="product__button3">></button>
+                    <button id="button2" class="product__button2"><</button>
+                    <button id="button3" class="product__button3">></button>
                 </div>
             </section>
         </article>
@@ -533,5 +533,32 @@
             <section></section>
         </article>
     </main>
+
+    <script>
+        let i = 1;
+        const x = 100;
+
+        let num = document.getElementById("input__number");
+        const button = document.getElementById("productButton");
+        const button2 = document.getElementById("button2");
+        const button3 = document.getElementById("button3");
+
+        button.onclick = function() {
+            const sum = Number(input__number.textContent) + i;
+            num.textContent = sum;
+        }
+
+
+        button2.onclick = function() {
+            const sum2 = Number(input__number.textContent) - x + i;
+            num.textContent = sum2;
+        }
+
+
+        button3.onclick = function() {
+            const sum3 = Number(input__number.textContent) + x - num.textContent;
+            num.textContent = sum3;
+        }
+    </script>
 </body>
 </html>
