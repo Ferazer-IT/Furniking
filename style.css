@@ -155,7 +155,7 @@ button {
     color: #fff;
     font-family: serif;
     padding-left: 35px;
-    margin-left: 90px;
+    margin-left: 6%;
 }
 
 
@@ -168,7 +168,7 @@ button {
 
 .collections__main {
     display: flex;
-    margin-left: 90px;
+    margin-left: 6%;
     background: rgba(247, 248, 250, 1);
     width: 260px;
     height: 450px;
@@ -315,13 +315,9 @@ button {
 .information__about {
     display: flex;
     align-items: center;
-    margin-left: 105px;
+    margin-left: 7%;
 }
 
-
-.information__about:first-child {
-    margin-left: 90px;
-}
 
 
 .information__title {
@@ -448,13 +444,13 @@ button {
     display: flex;
     align-items: center;
     margin-top: 50px;
-    padding: 0px 100px;
+    padding: 0px 6.5%;
 }
 
 
 .trending__items--info {
     position: relative;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 .trending__items:first-child {
@@ -570,7 +566,7 @@ button {
     animation-fill-mode: forwards;
 }
 
-
+/*Special Offer*/
 .special-text {
     color: rgba(85, 85, 85, 1);
     font-size: 36px;
@@ -587,7 +583,7 @@ button {
 
 
 .special-offer__about {
-    margin-left: 70px;
+    margin-left: 5%;
     margin-top: 50px;
 }
 
@@ -666,7 +662,6 @@ button {
 /*Products*/
 #products {
     margin-top: 80px;
-    
 }
 
 
@@ -680,11 +675,16 @@ button {
 }
 
 
+.products__points {
+    text-align: center;
+}
+
+
+
 .products__primary {
     color: rgba(122, 199, 81, 1);
     font-size: 24px;
     font-family: GothamProM;
-    margin-left: 300px;
     transition: .5s;
 }
 
@@ -693,7 +693,7 @@ button {
     color: rgba(194, 194, 194, 1);
     font-size: 22px;
     font-family: GothamProM;
-    margin-left: 50px;
+    margin-left: 3.5%;
     transition: .5s;
 }
 
@@ -718,7 +718,7 @@ button {
 
 .product__info {
     position: relative;
-    margin-left: 55px;
+    margin-left: 4%;
 }
 
 
