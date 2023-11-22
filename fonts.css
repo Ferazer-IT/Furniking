@@ -1,10 +1,10 @@
 @font-face {
     font-family: GothamProB;
-    src: url(../fonts/GothamProNarrowBold.ttf);
+    src: url(/fonts/GothamProNarrowBold.ttf);
 }
 
 
 @font-face {
     font-family: GothamProM;
-    src: url(../fonts/GothamProMedium.ttf);
+    src: url(/fonts/GothamProMedium.ttf);
 }
